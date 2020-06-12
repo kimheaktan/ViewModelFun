@@ -1,0 +1,17 @@
+@using viewModelFun.Models
+@model List<User>
+
+    <div class="NavHeader">
+
+        <a href="/">Message</a> 
+        <a href="/numbers">Numbers</a> 
+        <a href="/user">User</a> 
+        <a href="/users">Users</a> 
+
+    </div>
+<h3>Here are some Users!</h3>
+@foreach (var name in Model)
+{
+    <P>@name.FirstName @name.LastName</P>
+    <P></P>
+}
